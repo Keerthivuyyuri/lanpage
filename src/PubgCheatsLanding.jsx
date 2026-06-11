@@ -4,6 +4,8 @@ import pubgbag from "./assets/pubgbag.png";
 import photo from "./assets/photo.png";
 import phone from "./assets/phone.png";
 import gift from "./assets/gift.png";
+import smoke from "./assets/smoke.png";
+
 const navItems = [
   "ГЛАВНАЯ",
   "ТАРИФЫ",
@@ -435,13 +437,33 @@ function Contact() {
       <div className="relative z-10 mx-auto mt-20 max-w-[1180px] px-6">
         <div className="flex flex-col items-center justify-between gap-12 lg:flex-row lg:items-end">
           {/* Gift Box */}
-          <div className="flex justify-center lg:w-1/2">
+          {/* <div className="relative flex justify-center items-end">
             <img
               src={gift}
               alt="PUBG Gift Box"
-              className="w-[450px] lg:w-[500px]"
+              className="absolute top-[-70px] left-1/2 -translate-x-1/2 w-[280px] lg:w-[350px] z-20"
             />
-          </div>
+
+            
+            <img
+              src={smoke}
+              alt="Smoke"
+              className="w-[500px] lg:w-[600px] relative z-10 drop-shadow-2xl"
+            />
+          </div> */}
+          <div className="relative flex justify-center lg:w-1/2">
+  <img
+    src={smoke}
+    alt="Blue Curve"
+    className="w-[550px] lg:w-[700px]"
+  />
+
+  <img
+    src={gift}
+    alt="PUBG Gift Box"
+    className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] lg:w-[360px] z-20"
+  />
+</div>
 
           {/* Contact Form */}
           <div className="relative w-full max-w-[500px] rounded bg-white px-10 py-10 shadow-2xl">
